@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move Your Way</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="brand" href="#top"><span>Move</span> Your Way</a>
+      <div class="nav-items">
+        <a href="#top">Home</a>
+        <a href="#story">Story</a>
+        <a href="#why">Why it matters</a>
+        <a href="#gallery">Activities</a>
+      </div>
+      <a class="nav-link" href="#gallery">Start Moving</a>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="hero-grid">
+        <section class="hero-copy">
+          <p class="eyebrow">All kinds of motion. One strong start.</p>
+          <h1>Move your way, even if sports are not your thing.</h1>
+          <p class="lead">
+            This campaign is for kids who like comfort, music, calm, style, and
+            low-pressure movement. Nike shoes can show up for stretching,
+            walking, dancing in your room, or taking a breath between classes.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#gallery">Explore activities</a>
+            <a class="button button-secondary" href="#story">Read the story</a>
+          </div>
+          <div class="hero-metrics" aria-label="Movement can look different for everyone">
+            <span>01. Reset</span>
+            <span>02. Move</span>
+            <span>03. Repeat</span>
+          </div>
+        </section>
+
+        <aside class="hero-panel">
+          <div class="panel-card panel-highlight">
+            <p class="panel-label">No sidelines needed</p>
+            <p>
+              You do not need to be on a team, win medals, or love competition
+              to count as someone who moves.
+            </p>
+          </div>
+          <div class="panel-card">
+            <p class="panel-label">For non-sporty kids</p>
+            <ul>
+              <li>Gentle movement</li>
+              <li>Solo routines</li>
+              <li>Creative energy</li>
+              <li>Comfort and style</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="trust-strip">
+        <p><span>01</span> Stretch after gaming.</p>
+        <p><span>02</span> Walk with friends.</p>
+        <p><span>03</span> Breathe between classes.</p>
+        <p><span>04</span> Move without pressure.</p>
+      </section>
+
+      <section class="story-section" id="story">
+        <div class="section-heading">
+          <p class="eyebrow">Backstory</p>
+          <h2>Nike started in sport, but movement has always grown bigger than one lane.</h2>
+        </div>
+        <div class="story-layout">
+          <article class="story-card">
+            <h3>From runners to everyday movers</h3>
+            <p>
+              Nike built its name around athletic performance, but the meaning
+              of movement keeps expanding. Today, movement can look competitive,
+              casual, quiet, creative, social, or personal.
+            </p>
+            <p>
+              That matters for kids who do not feel sporty. If you stretch to
+              reset, walk to clear your head, practice yoga for focus, or dance
+              because it feels fun, you are still using movement in a real way.
+            </p>
+          </article>
+          <article class="story-card accent-card">
+            <h3>What this site wants you to feel</h3>
+            <p>
+              You belong in the conversation even if you never join a team.
+              Shoes are not a membership card for athletes only. They can be
+              part of your own routine, your own vibe, and your own version of
+              moving.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reasons-section" id="why">
+        <div class="section-heading">
+          <p class="eyebrow">Why it connects</p>
+          <h2>Movement can fit the things non-sporty kids already enjoy.</h2>
+        </div>
+        <div class="reasons-grid">
+          <article class="reason-card">
+            <h3>Low pressure</h3>
+            <p>No scoreboard. No tryouts. Just small moves that still count.</p>
+          </article>
+          <article class="reason-card">
+            <h3>Style first</h3>
+            <p>Sneakers can be part of your outfit, not only your workout.</p>
+          </article>
+          <article class="reason-card">
+            <h3>Mind and body</h3>
+            <p>Breathing, balance, and focus matter just as much as speed.</p>
+          </article>
+          <article class="reason-card">
+            <h3>Room for creativity</h3>
+            <p>Playlists, dance breaks, photo walks, and flow sessions all belong.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow">Pick Your Own Move</p>
+            <h2>Choose a kind of movement that feels like you.</h2>
+          </div>
+          <div class="controls">
+            <label for="categoryFilter" class="control-label">Filter by vibe</label>
+            <select id="categoryFilter" aria-label="Filter activities">
+              <option value="all">All activities</option>
+              <option value="calm">Calm</option>
+              <option value="creative">Creative</option>
+              <option value="social">Social</option>
+              <option value="outdoor">Outdoor</option>
+              <option value="energy">Energy boost</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="stats-bar">
+          <p><span id="activityCount">0</span> activities waiting for you</p>
+          <button class="shuffle-button" id="shuffleButton" type="button">
+            Show me a random vibe
+          </button>
+        </div>
+
+        <div class="card-grid" id="activityGrid"></div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-card">
+          <p class="eyebrow">Your version counts</p>
+          <h2>You do not need to move like everyone else to start moving.</h2>
+          <p>
+            Find one activity that feels easy, one that feels fun, and one that
+            helps you reset. That is more than enough to begin.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
